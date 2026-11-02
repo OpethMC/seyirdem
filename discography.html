@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Discography — Seyirdem</title>
+  <title>Recordings — Seyirdem</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,27 +11,121 @@
     <a class="brand" href="index.html">Seyirdem</a>
     <nav>
       <a href="about.html">About</a>
-      <a href="shows.html">Shows</a>
-      <a href="discography.html" aria-current="page">Discography</a>
+      <a href="shows.html">Live</a>
+      <a href="discography.html" aria-current="page">Recordings</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <h1>Discography</h1>
+  <main class="wide">
+    <h1>Recordings</h1>
 
-    <!-- Copy a <section class="release"> block for each release. Put cover art in images/. -->
-    <section class="release">
-      <h2>Öteki Alem</h2>
-      <p class="muted">Year · Format</p>
-      <!-- <img src="images/oteki-alem.jpg" alt="Öteki Alem cover"> -->
-      <p>Description, tracklist, and listen/buy links go here.</p>
-    </section>
+    <!--
+      Each album is one <details class="album" name="album"> block.
+      Click a cover to open its notes; opening one closes the others.
+      To add an album, copy a whole block and put the cover in images/.
+    -->
+    <div class="albums">
+
+      <details class="album" name="album">
+        <summary>
+          <h2>Karanlığın Şahidi</h2>
+          <img src="images/karanligin-sahidi.jpg" alt="Karanlığın Şahidi cover">
+        </summary>
+        <div class="album-info">
+          <p class="tagline">A rasat by Seyirdem</p>
+          <h3>Tracklist</h3>
+          <ol>
+            <li>Track one</li>
+            <li>Track two</li>
+            <li>Track three</li>
+          </ol>
+          <h3>Musicians</h3>
+          <ul>
+            <li>Name — instrument</li>
+          </ul>
+          <p>Recorded at Homewood Mezarlığı Studios</p>
+          <p class="credits">
+            Music written by —<br>
+            Artwork by —<br>
+            Mixed by —<br>
+            Mastered by —
+          </p>
+          <p class="credits">
+            ℗ Sarkaç Üretimevi Etiketi<br>
+            © Sarkaç Üretimevi Etiketi
+          </p>
+        </div>
+      </details>
+
+      <details class="album" name="album">
+        <summary>
+          <h2>Öteki Âlem</h2>
+          <img src="images/oteki-alem.jpg" alt="Öteki Âlem cover">
+        </summary>
+        <div class="album-info">
+          <p class="tagline">A rasat by Seyirdem</p>
+          <h3>Tracklist</h3>
+          <ol>
+            <li>Track one</li>
+            <li>Track two</li>
+            <li>Track three</li>
+          </ol>
+          <h3>Musicians</h3>
+          <ul>
+            <li>Name — instrument</li>
+          </ul>
+          <p>Recorded at Homewood Mezarlığı Studios</p>
+          <p class="credits">
+            Music written by —<br>
+            Artwork by —<br>
+            Mixed by —<br>
+            Mastered by —
+          </p>
+          <p class="credits">
+            ℗ Sarkaç Üretimevi Etiketi<br>
+            © Sarkaç Üretimevi Etiketi
+          </p>
+        </div>
+      </details>
+
+      <details class="album" name="album">
+        <summary>
+          <h2>Boşluğu Tapanlar</h2>
+          <img src="images/boslugu-tapanlar.jpg" alt="Boşluğu Tapanlar cover">
+        </summary>
+        <div class="album-info">
+          <p class="tagline">A rasat by Seyirdem</p>
+          <h3>Tracklist</h3>
+          <ol>
+            <li>Track one</li>
+            <li>Track two</li>
+            <li>Track three</li>
+          </ol>
+          <h3>Musicians</h3>
+          <ul>
+            <li>Name — instrument</li>
+          </ul>
+          <p>Recorded at Homewood Mezarlığı Studios</p>
+          <p class="credits">
+            Music written by —<br>
+            Artwork by —<br>
+            Mixed by —<br>
+            Mastered by —
+          </p>
+          <p class="credits">
+            ℗ Sarkaç Üretimevi Etiketi<br>
+            © Sarkaç Üretimevi Etiketi
+          </p>
+        </div>
+      </details>
+
+    </div>
 
     <section class="release">
       <h2>Forgot My Name <span class="muted">(as Mourdom)</span></h2>
       <p class="muted">Demo</p>
-      <p>Description and links go here.</p>
+      <p><a href="https://seyirdem.bandcamp.com/track/forgot-my-name">Listen on Bandcamp</a></p>
     </section>
   </main>
 

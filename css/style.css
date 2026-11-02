@@ -130,10 +130,71 @@ blockquote cite { display: block; margin-top: 0.5rem; color: var(--muted); font-
 }
 .shows .date { color: var(--muted); }
 
-/* Discography */
+/* Recordings */
+main.wide { max-width: 1040px; }
+
+.albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 4rem;
+}
+
+.album summary { list-style: none; cursor: pointer; }
+.album summary::-webkit-details-marker { display: none; }
+
+.album h2 {
+  font-family: var(--display);
+  font-weight: normal;
+  font-size: 1.3rem;
+  color: var(--accent);
+  margin: 0 0 0.75rem;
+}
+
+/* Covers are black and white until hovered or opened */
+.album img {
+  width: 100%;
+  display: block;
+  filter: grayscale(1);
+  transition: filter 0.4s ease;
+}
+.album summary:hover img,
+.album summary:focus-visible img,
+.album[open] img { filter: none; }
+
+.album-info { padding-top: 1rem; }
+.album-info .tagline { font-style: italic; color: var(--muted); margin-top: 0; }
+.album-info h3 { font-size: 0.95rem; color: var(--accent); margin: 1.25rem 0 0.4rem; }
+.album-info ol,
+.album-info ul { margin: 0; padding-left: 1.25rem; }
+.album-info .credits { color: var(--muted); font-size: 0.9rem; }
+
 .release { margin-bottom: 3rem; }
 .release h2 { margin-bottom: 0.25rem; color: var(--accent); font-weight: normal; }
-.release img { max-width: 300px; width: 100%; display: block; margin: 1rem 0; }
+
+/* About photo */
+.profile {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto 2rem;
+}
+
+/* Contact studio photos */
+.photo-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 2.5rem 0 0;
+}
+.photo-pair img { width: 100%; height: auto; display: block; }
+.photo-pair figcaption { grid-column: 1 / -1; color: var(--muted); font-size: 0.9rem; }
+
+@media (max-width: 600px) {
+  .photo-pair { grid-template-columns: 1fr; }
+}
 
 .site-footer {
   text-align: center;
