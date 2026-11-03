@@ -184,6 +184,12 @@ main.wide { max-width: 1040px; }
   margin: 0 auto 2rem;
 }
 
+/* Contact social icons */
+.social { display: flex; gap: 1.5rem; align-items: center; }
+.social a { color: var(--accent); transition: opacity 0.2s; }
+.social a:hover { opacity: 0.6; }
+.social svg { width: 32px; height: 32px; display: block; fill: currentColor; }
+
 /* Contact studio photos */
 .photo-pair {
   display: grid;
